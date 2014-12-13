@@ -39,6 +39,7 @@ class MyFifo : public QObject
 
     QLocalSocket *socket;
     quint16 blockSize;
+
 public:
     MyFifo();
     ~MyFifo();

@@ -27,7 +27,7 @@
 
 using namespace webcamcap;
 
-MyFifo::MyFifo::MyFifo()
+MyFifo::MyFifo()
 {
     HaveConnection = false;
 

@@ -19,7 +19,6 @@ class MainWindow : public QMainWindow
     QGameBoard *gameBoard;
     webcamcap::MyFifo fifo;
 
-
     QTime *timer;
     bool lastWasEmpty;
 

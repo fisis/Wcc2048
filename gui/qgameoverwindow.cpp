@@ -1,7 +1,9 @@
 #include "qgameoverwindow.h"
 #include "qresetbutton.h"
 
-#include <QVboxLayout>
+#include <QDialog>
+#include <QLayout>
+#include <QBoxLayout>
 #include <QLabel>
 #include <QDebug>
 #include <QResizeEvent>

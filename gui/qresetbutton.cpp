@@ -8,6 +8,6 @@ QResetButton::QResetButton( QWidget* parent) : QLabel(parent)
 }
 
 void QResetButton::mousePressEvent(QMouseEvent* event)
-{
+{   
     emit clicked();
 }

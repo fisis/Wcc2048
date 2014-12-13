@@ -1,5 +1,4 @@
 #include "gui/qgameboard.h"
-#include "core/board.h"
 #include "core/game.h"
 #include "gui/qtile.h"
 #include "core/tile.h"
@@ -68,6 +67,10 @@ void QGameBoard::keyPressEvent(QKeyEvent *event)
     case Qt::Key_Down:
         game->move(DOWN);
         break;
+    case Qt::Key_Q:
+
+        break;
+
     }
 }
 
@@ -82,6 +85,11 @@ void QGameBoard::notify()
         score->setText(QString("SCORE: %1").arg(game->getScore()));
 
     drawBoard();
+}
+
+void QGameBoard::arrows(Direction dir)
+{
+    game->move(dir);
 }
 
 void QGameBoard::drawBoard()

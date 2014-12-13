@@ -3,6 +3,7 @@
 
 #include "core/observer.h"
 #include "qgameoverwindow.h"
+#include "core/board.h"
 
 #include <QVector>
 #include <QWidget>
@@ -22,6 +23,8 @@ public:
     explicit QGameBoard(QWidget *parent = 0);
 
     void notify();
+
+    void arrows(Direction dir);
 
 private:
 

@@ -4,13 +4,14 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = ExpGame
+TARGET = Wcc2048
 TEMPLATE = app
 
+QMAKE_CXXFLAGS += -std=c++11 -pedantic -Wall -Wextra
 
 SOURCES += main.cpp\
         gui/mainwindow.cpp \
@@ -22,7 +23,8 @@ SOURCES += main.cpp\
     gui/qresetbutton.cpp \
     core/observer.cpp \
     core/subject.cpp \
-    gui/qgameoverwindow.cpp
+    gui/qgameoverwindow.cpp \
+    webcamcap.cpp
 
 HEADERS  += gui/mainwindow.h \
     core/tile.h \
@@ -34,5 +36,8 @@ HEADERS  += gui/mainwindow.h \
     core/observer.h \
     core/subject.h \
     gui/qgameoverwindow.h \
-    gui/qwinwindow.h
+    webcamcap.h
+
+FORMS += \
+    mainwindow.ui
 
