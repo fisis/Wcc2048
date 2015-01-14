@@ -90,7 +90,6 @@ void MainWindow::handledirections()
     float mindiff = 0.07;
 
 
-
     if(glm::abs(diff.x) > glm::abs(diff.y))
     {
 
